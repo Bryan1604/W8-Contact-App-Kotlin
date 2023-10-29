@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout
+<!--<androidx.cardview.widget.CardView  xmlns:android="http://schemas.android.com/apk/res/android">-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:background="@color/red"
         android:orientation="horizontal"
@@ -8,13 +8,17 @@
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:layout_margin="5dp"
             android:src="@drawable/menu_icon"
             />
         <TextView
-            android:contentDescription="Inbox"
-            android:backgroundTint="@color/white"
+            android:id="@+id/inbox"
             android:layout_width="0dp"
             android:layout_weight="1"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:layout_margin="10dp"
             android:layout_height="match_parent"/>
 
         <androidx.appcompat.widget.AppCompatImageView
@@ -22,4 +26,4 @@
             android:layout_height="match_parent"
             android:src="@drawable/search_icon" />
     </LinearLayout>
-</layout>
+<!--</androidx.cardview.widget.CardView>-->
