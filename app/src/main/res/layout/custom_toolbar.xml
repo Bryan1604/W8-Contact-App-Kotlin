@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/red"
+        android:orientation="horizontal"
+        android:layout_height="?android:attr/actionBarSize">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/menu_icon"
+            />
+        <TextView
+            android:contentDescription="Inbox"
+            android:backgroundTint="@color/white"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/search_icon" />
+    </LinearLayout>
+</layout>
