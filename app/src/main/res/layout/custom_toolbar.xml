@@ -5,13 +5,20 @@
         android:background="@color/red"
         android:orientation="horizontal"
         android:layout_height="?android:attr/actionBarSize">
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="5dp"
-            android:src="@drawable/menu_icon"
-            />
-        <TextView
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:text="Contact App"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
             android:id="@+id/inbox"
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -21,9 +28,5 @@
             android:layout_margin="10dp"
             android:layout_height="match_parent"/>
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="55dp"
-            android:layout_height="match_parent"
-            android:src="@drawable/search_icon" />
-    </LinearLayout>
+</LinearLayout>
 <!--</androidx.cardview.widget.CardView>-->

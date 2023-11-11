@@ -1,10 +1,12 @@
 package com.example.w6_kotlin_listview
 
+import java.io.Serializable
+
 class ItemData(
-    var symbol:String,
-    val sender: String,
-    val content: String,
-    val time: String,
-){
+    var id: Int,
+    val name: String,
+    val phoneNumber: String,
+    val email: String,
+) : Serializable {
 
 }
